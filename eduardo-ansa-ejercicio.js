@@ -15,9 +15,9 @@
 
 // Logre ver un patron en los valores que forman las diagonales, este es:
 // - Para dimensiones pares (2x2, 4x4, 6x6,...), los valores de las diagonales comienzan en 1 y van aumentando de 1, luego de 4 valores, comienzan a aumentar de 3, 4 valores mas y aumentan de a 5 y asi sucesivamente. 
-//   En resumen cada 4 valores incrementa el aumento en 2, podriamos decir que aumenta de forma : 1 + 2i
+//   En resumen inicia aumentando en 1 y cada 4 valores incrementa el aumento en 2, podriamos decir que aumenta de forma : 1 + 2i
 // - Para dimensiones Impares (3x3, 5x5, 5x5,...), los valores de las diagonales comienzan en 1 y van aumentando de 2, luego de 4 valores, comienzan a aumentar de 4, 4 valores mas y aumentan de a 6 y asi sucesivamente. 
-//   En resumen cada 4 valores incrementa el aumento en 2, podriamos decir que aumenta de forma : 2 + 2i.
+//   En resumen inicia aumentando en 2 y cada 4 valores incrementa el aumento en 2, podriamos decir que aumenta de forma : 2 + 2i.
 
 // Entonces se tiene que iterar la cantidad de veces que se repetira el proceso, por ejemplo para 4x4 solo se itera dos vez, obteniendo los valores 1,2,3,4 y 7,10,13,16 (siguiendo la forma 1 + 2i). 
 // Podriamos decir que las repeteciones son igual a: dimension/2 
