@@ -14,22 +14,20 @@
 // console.log('10x10', 1+2+3+4+ 7+10+13+16+ 21+26+31+36+ 43+50+57+64 +73+82+91+100) //+1 +3 +5 +7 +9
 
 // Logre ver un patron en los valores que forman las diagonales, este es:
-// - Para dimensiones pares (2x2, 4x4, 6x6,...), los valores de las diagonales comienzan en 1 y van aumentando de 1, luego de 4
-//   valores, comienzan a aumentar de 3, 4 valores mas y aumentan de a 5 y asi sucesivamente. En resumen cada 4 valores incrementa
-//   el aumento en 2, podriamos decir que aumenta de forma : 
-// - Para dimensiones Impares (3x3, 5x5, 5x5,...), los valores de las diagonales comienzan en 1 y van aumentando de 2, luego de 4
-//   valores, comienzan a aumentar de 4, 4 valores mas y aumentan de a 6 y asi sucesivamente. En resumen cada 4 valores incrementa
-//   el aumento en 2, podriamos decir que aumenta de forma : 2 + 2i.
+// - Para dimensiones pares (2x2, 4x4, 6x6,...), los valores de las diagonales comienzan en 1 y van aumentando de 1, luego de 4 valores, comienzan a aumentar de 3, 4 valores mas y aumentan de a 5 y asi sucesivamente. 
+//   En resumen cada 4 valores incrementa el aumento en 2, podriamos decir que aumenta de forma : 
+// - Para dimensiones Impares (3x3, 5x5, 5x5,...), los valores de las diagonales comienzan en 1 y van aumentando de 2, luego de 4 valores, comienzan a aumentar de 4, 4 valores mas y aumentan de a 6 y asi sucesivamente. 
+//   En resumen cada 4 valores incrementa el aumento en 2, podriamos decir que aumenta de forma : 2 + 2i.
 
-// Entonces se tiene que iterar la cantidad de veces que se repetira el proceso, por ejemplo para 4x4 solo se itera dos vez, obteniendo
-// los valores 1,2,3,4 y 7,10,13,16 (siguiendo la forma 1 + 2i). Podriamos decir que las repeteciones son igual a: dimension/2 
+// Entonces se tiene que iterar la cantidad de veces que se repetira el proceso, por ejemplo para 4x4 solo se itera dos vez, obteniendo los valores 1,2,3,4 y 7,10,13,16 (siguiendo la forma 1 + 2i). 
+// Podriamos decir que las repeteciones son igual a: dimension/2 
 // -> Ej 4x4 -> 4/2 -> 2 repeticiones 
 // -> Ej 5x5 -> 5/2 -> 2.5 repeticiones = 2 repeticiones, en estos casos se redondea para abajo
 
-// En resumen se debe iniciar con un arreglo vacio, al cual se le iran agregando arreglos con 4 valores, los cuales corresponden a los valores de las
-// diagonales, mas especificamente a las esquinas(4) desde dentro hacia afuera. Este proceso se repetira dependiendo de la formula (dimension / 2).
-// Cuando se terminen las repeticiones se tendra un arreglo que contenga varios arreglos con los valores de las diagonales. se Utilizara la funcion flat()
-// para dejar todo en un solo arreglo y luego sumar todos los valores que este contenga. en caso de que la dimension se impar al total sumarle 1.
+// En resumen se debe iniciar con un arreglo vacio, al cual se le iran agregando arreglos con 4 valores, los cuales corresponden a los valores de las diagonales, mas especificamente a las esquinas(4) desde dentro hacia afuera. 
+// Este proceso se repetira dependiendo de la formula (dimension / 2).
+// Cuando se terminen las repeticiones se tendra un arreglo que contenga varios arreglos con los valores de las diagonales. 
+// se Utilizara la funcion flat() para dejar todo en un solo arreglo y luego sumar todos los valores que este contenga. en caso de que la dimension se impar al total sumarle 1.
 
 //Ej
 
